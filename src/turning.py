@@ -42,8 +42,9 @@ def main():
             elif character == "-": 
                 memory[current_pointer] -= 1
             elif character == ".":
-                print("data at index ", current_pointer, ": ", memory[current_pointer])
+                print(chr(memory[current_pointer])
             elif character == ",":
+                #input only supports integers for now
                 input_number = int(input("enter data: "))
                 memory[current_pointer] = input_number
             '''
